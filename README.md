@@ -6,7 +6,7 @@ Quick setup for docker containerisation
 touch Dockerfile
 
 #edit the text file just created
-# syntax=docker/dockerfile:1
+syntax=docker/dockerfile:1
 '''
 FROM node:18-alpine
 WORKDIR /app
@@ -15,7 +15,7 @@ RUN yarn install --production
 CMD ["node", "src/index.js"]
 EXPOSE 3000
 '''
-# go to working directory
+go to working directory
 cd /path/to/getting-started=app
 # build the image
 docker build -t getting-started .
